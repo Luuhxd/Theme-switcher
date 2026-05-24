@@ -1,0 +1,120 @@
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: var(--fontColor);
+    font-family: Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+    background: var(--bg);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s ease;
+}
+
+/* LISTA */
+ul {
+    margin-top: 15px;
+    text-align: center;
+}
+
+li {
+    list-style: circle;
+    margin: 10px 0;
+}
+
+.list {
+    list-style: square;
+}
+
+/* CARD */
+.card {
+    width: 490px;
+    min-height: 320px;
+
+    background: rgba(228, 228, 228, 0.11);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    padding: 30px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    transition: 0.3s ease;
+}
+
+/* TÍTULO */
+h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* TEXTO */
+#msg {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* LIGHT THEME */
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnbg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+/* DARK THEME */
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnbg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+/* BOTÃO */
+.btn {
+    position: absolute;
+    bottom: 250px;
+    left: 380px;
+
+    height: 55px;
+    width: 90px;
+
+    border-radius: 12px;
+    border: none;
+
+    color: var(--btnFontColor);
+    background-color: var(--btnbg);
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:focus {
+    outline: none;
+}
