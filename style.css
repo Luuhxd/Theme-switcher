@@ -1,7 +1,8 @@
 :root {
-    --green: #00FF00;
+    --lightgray: #E9ECEF;
     --white: #ffffff;
     --black: #000000;
+    --bg: #055db4;
 }
 
 /* RESET */
@@ -87,7 +88,7 @@ h1 {
 /* DARK THEME */
 .dark-theme {
     --bg: var(--black);
-    --fontColor: var(--green);
+    --fontColor: var(--lightgray);
     --btnbg: var(--white);
     --btnFontColor: var(--black);
 }
